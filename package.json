@@ -1,0 +1,27 @@
+{
+  "name": "backend-gas",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:prod": "webpack --mode=production --config webpack.config.js",
+    "build": "webpack --mode=development --config webpack.config.js",
+    "sync": "cd build/ && clasp push"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.0.1",
+    "@types/google-apps-script": "0.0.38",
+    "copy-webpack-plugin": "^5.0.1",
+    "eslint": "^5.15.1",
+    "gas-webpack-plugin": "^1.0.2",
+    "rxjs": "^6.4.0",
+    "ts-loader": "^5.3.3",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
