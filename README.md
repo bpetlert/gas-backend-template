@@ -8,37 +8,39 @@ This is a template for using GAS as backend serving JSON as describe in [1].
 
 ## Getting Started
 
-- Installation
-  Install required packages
+### Installation
+
+Install required packages
 
 ```sh
 cd backend-gas-template
 pnpm install
 ```
 
-- Building
-  For production use `build:prod`
+### Building
+
+For production use `build:prod`
 
 ```sh
 pnpm build
 ```
 
-- Deployment
+### Deployment
 
-  1. Create apps script project using UI [2] or `clasp`[3]. clasp tool is already installed. It can be launched by `pnpx clasp`.
-  2. Insert script ID of your apps script project in `clasp.json`.
+1. Create apps script project using UI [2] or `clasp`[4]. clasp tool is already installed. It can be launched by `pnpx clasp`.
+2. Insert script ID of your apps script project in `clasp.json`.
 
-     ```json
-     { "scriptId": "<your script ID here>" }
-     ```
+   ```json
+   { "scriptId": "<your script ID here>" }
+   ```
 
-  3. Push to apps script project
+3. Push to apps script project
 
-     ```sh
-     pnpm run sync
-     ```
+   ```sh
+   pnpm run sync
+   ```
 
-  4. Deploy as webapps using UI [3] or clasp [4].
+4. Deploy as webapps using UI [3] or clasp [4].
 
 ## Notes
 
